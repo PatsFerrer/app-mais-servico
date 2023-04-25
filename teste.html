@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider{
+        overflow: hidden;
+    
+    }
+    .slider > .slider-content{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        transition: all 500ms ease;
+    
+    }
+    
+    .slider > .slider-content > .slider-item {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    
+    .slider > input:nth-child(1):checked ~ .slider-content{
+        transform: translateX(0%);
+    }
+    
+    .slider > input:nth-child(2):checked ~ .slider-content{
+        transform: translateX(-100%);
+    }
+    .slider > input:nth-child(3):checked ~ .slider-content{
+        transform: translateX(-200%);
+    }
+    
+    .slider > input:nth-child(4):checked ~ .slider-content{
+        transform: translateX(-300%);
+    }
+    </style>
+</head>
+<body>
+    <section class="slider">
+        <input name='slide' type="radio" >
+        <input name='slide' type="radio" checked>
+        <input name='slide' type="radio">
+        <input name='slide' type="radio">
+    
+        <div class="slider-content">
+            <div class="slider-item">
+                <img src="images/perfis/perfil10.png" alt="">
+                <img src="images/perfis/perfil12.png" alt="">
+                <img src="images/perfis/perfil11.png" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="images/perfis/perfil10.png" alt="">
+                <img src="images/perfis/perfil12.png" alt="">
+                <img src="images/perfis/perfil11.png" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="images/perfis/perfil13.png" alt="">
+                <img src="images/perfis/perfil10.png" alt="">
+                <img src="images/perfis/perfil12.png" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="images/perfis/perfil10.png" alt="">
+                <img src="images/perfis/perfil12.png" alt="">
+                <img src="images/perfis/perfil11.png" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .galeria {
+            overflow: hidden;
+            background-color: lightblue;
+            border: 1px solid red;
+            width: 326px;
+            /* width: 100px; */
+            /* display: flex;
+            justify-content: flex-start; */
+        
+            
+        }
+
+        /* .galeria::-webkit-scrollbar{
+            width: 10px;
+            height: 10px;
+        } */
+        
+
+        .galeria .fotos {
+            display: flex;
+            gap: 10px;
+            width: 600%;
+            animation-name: animacao;
+            animation-duration: 15s;
+            animation-iteration-count: inherit;
+        }
+
+        .galeria .fotos img {
+            /* border: 1px solid red; */
+            width: 100px;
+        }
+
+        .fotos .perfil {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            display: flex;
+            border: 1px solid;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        @keyframes animacao {
+            0% {margin-left: 0;}
+            20% {margin-left: 0;}
+            25% {margin-left: -100%;}
+            45% {margin-left: -100%;}
+            50% {margin-left: -200%;}
+            70% {margin-left: -200%;}
+            75% {margin-left: -300%;}
+            95% {margin-left: -300%;}
+            100% {margin-left: -400%;}
+        }
+    </style>
+</head>
+<body>
+    <section class="galeria">
+        <div class="fotos">
+            <div class="perfil">
+                <img src="images/perfis/perfil3.png" alt="Daniel">
+                <p>Daniel <br> <b>Eletricista</b></p>
+            </div>
+            <div class="perfil">
+                <img src="images/perfis/perfil4.png" alt="Enzo">
+                <p>Enzo <br> <b>Trancista</b></p>
+            </div>
+            <div class="perfil">
+                <img src="images/perfis/perfil8.png" alt="Pats">
+                <p>Patricia <br> <b>Marmiteira</b> </p>
+            </div>
+            <div class="perfil">
+                <img src="images/perfis/perfil5.png" alt="Yasmin">
+                <p>Yasmin <br> <b>Bronza de fita</b></p>
+            </div>
+            <div class="perfil">
+                <img src="images/perfis/perfil6.png" alt="Guilherme">
+                <p>Guilherme <br> <b>Pedreiro</b></p>
+            </div>
+            <div class="perfil">
+                <img src="images/perfis/perfil7.png" alt="Anderson">
+                <p>Anderson <br> <b>Diarista</b></p>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

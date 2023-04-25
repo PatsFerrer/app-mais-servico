@@ -1,0 +1,179 @@
+:root {
+    --fonte1: opun mai;
+    --fonte2: Arial, Helvetica, sans-serif;
+}
+
+@keyframes animacao {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -75%;}
+    45% {margin-left: -75%;}
+    50% {margin-left: -175%;}
+    70% {margin-left: -175%;}
+    75% {margin-left: -275%;} 
+    95% {margin-left: -275%;}
+    100% {margin-left: -275%;}
+}
+
+header {
+    background-image: url(../images/fundo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 121px;
+}
+
+header img {
+    width: 50px;
+}
+
+header p{
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+header input {
+    display: block;
+    margin: 5px auto;
+    height: 30px;
+    width: 232px;
+    border: none;
+    outline: none;
+    font-family: var(--fonte2);
+    padding-left: 5px;
+}
+
+.melhores-avaliados {
+    margin-top: 3px;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.melhores-avaliados div {
+    /* border: 1px solid blue; */
+
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #FCB050;
+    width: 92vw;
+}
+
+.melhores-avaliados div p {
+    display: flex;
+    justify-content: center;
+}
+
+.melhores-avaliados img {
+    width: 150px;
+}
+
+.galeria {
+    overflow: hidden;
+    background-color: #fff;
+    /* border: 1px solid #FCB050; */
+    /* width: 326px; */
+    /* width: 100px; */
+    display: flex;
+    justify-content: center center;
+    
+}
+
+/* .galeria::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+} */
+
+
+.galeria .fotos {
+    display: flex;
+    /* gap: 168px; */
+    width: 600%;
+    animation-name: animacao;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.galeria .fotos img {
+    width: 100px;
+}
+
+.fotos .perfil {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* @keyframes animacao {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;} 
+    95% {margin-left: -300%;}
+    100% {margin-left: -400%;}
+}  */
+
+
+.forum {
+    margin-top: 30px;
+}
+
+.forum .forum-p {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.521);
+}
+
+.forum .palavras {
+    display: flex;
+    width: 100vw;
+    font-size: 10px;
+    justify-content: space-around;
+    margin-bottom: 1px;
+}
+
+.forum .caixa-forum {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.forum .postagens {
+    width: 50%;
+    text-align: center;
+}
+
+.forum .comentarios {
+    width: 50%;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+}
+
+.forum .comentarios img {
+    width: 30px;
+    margin-top: 5px;
+}

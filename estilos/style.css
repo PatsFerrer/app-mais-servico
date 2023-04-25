@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@font-face {
+    font-family: opun mai;
+    src: url(fontes/opun-mai-semi-bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte1: opun mai;
+    --fonte2: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: url(../images/fundo1.png);
+    /* background-repeat: repeat; */
+    background-position: center center;
+    background-size: cover;
+}
+
+.mais-servico {
+    font-family: var(--fonte1);
+}
+
+.mais-servico img {
+    width: 120px;
+    display: block;
+    margin: 2px auto;
+}
+
+.mais-servico > p {
+    font-size: 26px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+}
+
+main .slogan {
+    font-size: 18px;
+    color: white;
+    font-family: var(--fonte2);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.caixa-login {
+    margin-top: 15px;
+}
+
+.caixa-login input {
+    text-align: center;
+}
+
+.caixa-login input, button {
+    width: 220px;
+    height: 35px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    font-family: var(--fonte2);
+}
+
+.caixa-login .btn-entrar {
+    background-color: #009700;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.caixa-login .btn-entrar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.caixa-login .btn-cadastro {
+    background-color: #00A1A1;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.caixa-login .sem-cadastro {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-family: var(--fonte2);
+    padding: 5px;
+}
+
+.entre-com {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    font-family: var(--fonte2);
+    margin-top: -7px;
+}
+
+.fundo-branco {
+    display: flex;
+    background-color: #fff;
+    width: 80px;
+    margin: 3px auto;
+    border-radius: 5px;
+}
+
+.fundo-branco .fb, .google {
+    margin: auto;
+    width: 30px;
+}
+
+.fundo-branco img:hover {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: opun mai;
+    src: url(fontes/opun-mai-semi-bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte1: opun mai;
+    --fonte2: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--fonte2);
+    background-color: #fff;
+}
